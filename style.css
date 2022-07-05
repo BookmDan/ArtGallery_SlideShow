@@ -1,0 +1,120 @@
+body{
+  margin: auto;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+.nav-manual {
+  position:absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid  #f2f2f2;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #f2f2f2;
+}
+
+#r1:checked ~ .first {
+  margin-left:0;
+  transform: translateX(0);
+}
+
+#r2:checked ~ .first {
+  margin-left:-20%;
+  transform: translateX(0);
+}
+#r3:checked ~ .first{
+  margin-left:-40%;
+  transform: translateX(0);
+}
+#r4:checked ~ .first {
+  margin-left:-60%;
+  transform: translateX(0);
+}
+#r5:checked ~ .first {
+  margin-left:-80%;
+  transform: translateX(0);
+}
+
+/* css for auto nav */
+
+.auto-nav {
+  position:absolute;
+  width: 800px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+
+.auto-nav div {
+  border: 2px solid  #f2f2f2;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.auto-nav div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#r1:checked ~ .auto-nav .auto-btn1 {
+  background-color: #f2f2f2; 
+}
+#r2:checked ~ .auto-nav .auto-btn2 {
+  background-color: #f2f2f2; 
+}
+#r3:checked ~ .auto-nav .auto-btn3 {
+  background-color: #f2f2f2; 
+}
+#r4:checked ~ .auto-nav .auto-btn4 {
+  background-color: #f2f2f2; 
+}
+#r5:checked ~ .auto-nav .auto-btn5 {
+  background-color: #f2f2f2; 
+}
